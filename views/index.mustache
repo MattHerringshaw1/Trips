@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+
+    <h1>Add trip</h1>
+    <form method="POST" action="/">
+        <input type="text" placeHolder="Enter Trip Title" name="title" />
+        <input type="text" placeHolder="Enter Departure Date" name="dateDepart" />
+        <input type="text" placeHolder="Enter Return Date" name="dateReturn" />
+        <button>Save Trip</button>
+    </form>
+
+
+    <h1>Your trips</h1>
+    <ul>
+        {{#allTrips}}
+        <li>{{title}}</li>
+        <li>{{dateDepart}}</li>
+        <li>{{dateReturn}}</li>
+        {{/allTrips}}
+    </ul>
+
+
+    </body>
+</html>
